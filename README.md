@@ -68,7 +68,18 @@ More Pictures:
 <center><img src='https://github.com/shaanCh/Flutter-App-Control-LED/assets/69170712/4e0c6f37-42e3-4c6e-b9bf-657c50810725' width=50% height=50%></center>
 
 <center><img src='https://github.com/shaanCh/Flutter-App-Control-LED/assets/69170712/60ff9250-9181-4ab9-9a9f-5a00a5ffedb1' width=50% height=50%></center>
+</br>
+There is a lot that I left out so feel free to message me
+</br>
 
+Here are some other things involved in this project:
+- Setting Up Android Studio
+- Syncing Vscode and Android Studio
+- Setting up an emulator for a phone of your choice
+- Setting Static IP on Raspberry PI
+- Learned tmux on Raspberry Pi to organize terminals and run multiple terminals at the same time (Very useful for testing API/Server with different code)
+- Learning how to build an APK
+- Deploying the APK on a device so that your phone can actually use the app you build instead of using an emulator
 
 
 
