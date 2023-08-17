@@ -1,4 +1,6 @@
 # Flutter-App-Control-LED
+[![My Skills](https://skillicons.dev/icons?i=flutter,python,flask,dart,androidstudio,raspberrypi,vscode&theme=dark)](https://skillicons.dev)</br>
+
 ***I created a Flutter Application that could control WS2812b LED lights using a Raspberry Pi running a Flask web server***
 
 ## Frontend ##
