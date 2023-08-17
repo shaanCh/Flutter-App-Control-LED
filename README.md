@@ -35,3 +35,40 @@ In the image above, you can see the **getdata** function call passing in a diffe
 
 
 ## Backend ##
+Using almost the same Python code from my other repository --> [Controlling-LEDs-RaspberryPi-Webserver](https://github.com/shaanCh/Controlling-LEDs-RaspberryPi-Webserver/tree/main) </br>
+
+The AppControl.py script runs a basic Flask API that established different endpoints for different functions. When there is a request sent to that endpoint the function thats defined underneath it will be called and ran. 
+</br>
+For example:
+```ruby
+@app.route("/Red", methods=["GET"])
+def red():
+	ledcolor(strip, Color(255,0,0))
+	return {'message': 'SUCCESS'}
+```
+The endpoint defined in this example is "/Red" which runs a function defined earlier specifically for controlling the LED lights --> `ledcolor(strip, Color(255, 0, 0))`</br>
+
+All other functions and variables defines are solely for LED light functionality please feel free to check out my other repository for how the code can control LED lights --> [Controlling-LEDs-RaspberryPi-Webserver](https://github.com/shaanCh/Controlling-LEDs-RaspberryPi-Webserver/tree/main) </br>
+
+To make the webserver permanent on my Raspberry Pi I used the nohup command `sudo nohup python3 AppControl.py 2>&1 &`
+This will:
+- Keep the server running in the background
+- Can use Pi terminal and other utilities without interruption
+- Output any sort of code or message to the **nohup.out** file which you can easily `sudo cat nohup` into
+- Check if the server is still running with `ps -ef |grep nohup`
+- kill the session/server with ID from the above command `kill 13113`
+
+## Overall ##
+Now I can control the led lights from the comfort of my bed!
+
+https://github.com/shaanCh/Flutter-App-Control-LED/assets/69170712/e2055555-6d5e-4369-ae24-451cd85f963e
+
+More Pictures:
+</br>
+<center><img src='https://github.com/shaanCh/Flutter-App-Control-LED/assets/69170712/4e0c6f37-42e3-4c6e-b9bf-657c50810725' width=50% height=50%></center>
+
+<center><img src='https://github.com/shaanCh/Flutter-App-Control-LED/assets/69170712/60ff9250-9181-4ab9-9a9f-5a00a5ffedb1' width=50% height=50%></center>
+
+
+
+
